@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6548138619D8FD14000A4AA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6548138519D8FD14000A4AA8 /* AppDelegate.swift */; };
+		6548138819D8FD14000A4AA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6548138719D8FD14000A4AA8 /* ViewController.swift */; };
+		6548138B19D8FD14000A4AA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6548138919D8FD14000A4AA8 /* Main.storyboard */; };
+		6548138D19D8FD14000A4AA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6548138C19D8FD14000A4AA8 /* Images.xcassets */; };
+		6548139019D8FD14000A4AA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6548138E19D8FD14000A4AA8 /* LaunchScreen.xib */; };
+		6548139C19D8FD14000A4AA8 /* AngleGradientBorderTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6548139B19D8FD14000A4AA8 /* AngleGradientBorderTutorialTests.swift */; };
+		654813A819D9C892000A4AA8 /* AngleGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 654813A719D9C892000A4AA8 /* AngleGradientLayer.m */; };
+		654813AB19D9CA34000A4AA8 /* AngleGradientBorderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654813AA19D9CA34000A4AA8 /* AngleGradientBorderLayer.swift */; };
+		654813AD19D9CAA0000A4AA8 /* AngleGradientBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654813AC19D9CAA0000A4AA8 /* AngleGradientBorderView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6548139619D8FD14000A4AA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6548137819D8FD14000A4AA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6548137F19D8FD14000A4AA8;
+			remoteInfo = AngleGradientBorderTutorial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6548138019D8FD14000A4AA8 /* AngleGradientBorderTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AngleGradientBorderTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6548138419D8FD14000A4AA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6548138519D8FD14000A4AA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6548138719D8FD14000A4AA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6548138A19D8FD14000A4AA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6548138C19D8FD14000A4AA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6548138F19D8FD14000A4AA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6548139519D8FD14000A4AA8 /* AngleGradientBorderTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngleGradientBorderTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6548139A19D8FD14000A4AA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6548139B19D8FD14000A4AA8 /* AngleGradientBorderTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleGradientBorderTutorialTests.swift; sourceTree = "<group>"; };
+		654813A619D9C892000A4AA8 /* AngleGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AngleGradientLayer.h; sourceTree = "<group>"; };
+		654813A719D9C892000A4AA8 /* AngleGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AngleGradientLayer.m; sourceTree = "<group>"; };
+		654813A919D9C943000A4AA8 /* AngleGradientBorderTutorial-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AngleGradientBorderTutorial-Bridging-Header.h"; sourceTree = "<group>"; };
+		654813AA19D9CA34000A4AA8 /* AngleGradientBorderLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngleGradientBorderLayer.swift; sourceTree = "<group>"; };
+		654813AC19D9CAA0000A4AA8 /* AngleGradientBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngleGradientBorderView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6548137D19D8FD14000A4AA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6548139219D8FD14000A4AA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6548137719D8FD14000A4AA8 = {
+			isa = PBXGroup;
+			children = (
+				654813A519D9C892000A4AA8 /* AngleGradient */,
+				6548138219D8FD14000A4AA8 /* AngleGradientBorderTutorial */,
+				6548139819D8FD14000A4AA8 /* AngleGradientBorderTutorialTests */,
+				6548138119D8FD14000A4AA8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6548138119D8FD14000A4AA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6548138019D8FD14000A4AA8 /* AngleGradientBorderTutorial.app */,
+				6548139519D8FD14000A4AA8 /* AngleGradientBorderTutorialTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6548138219D8FD14000A4AA8 /* AngleGradientBorderTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				654813A919D9C943000A4AA8 /* AngleGradientBorderTutorial-Bridging-Header.h */,
+				6548138519D8FD14000A4AA8 /* AppDelegate.swift */,
+				6548138719D8FD14000A4AA8 /* ViewController.swift */,
+				654813AA19D9CA34000A4AA8 /* AngleGradientBorderLayer.swift */,
+				654813AC19D9CAA0000A4AA8 /* AngleGradientBorderView.swift */,
+				6548138919D8FD14000A4AA8 /* Main.storyboard */,
+				6548138C19D8FD14000A4AA8 /* Images.xcassets */,
+				6548138E19D8FD14000A4AA8 /* LaunchScreen.xib */,
+				6548138319D8FD14000A4AA8 /* Supporting Files */,
+			);
+			path = AngleGradientBorderTutorial;
+			sourceTree = "<group>";
+		};
+		6548138319D8FD14000A4AA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6548138419D8FD14000A4AA8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6548139819D8FD14000A4AA8 /* AngleGradientBorderTutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				6548139B19D8FD14000A4AA8 /* AngleGradientBorderTutorialTests.swift */,
+				6548139919D8FD14000A4AA8 /* Supporting Files */,
+			);
+			path = AngleGradientBorderTutorialTests;
+			sourceTree = "<group>";
+		};
+		6548139919D8FD14000A4AA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6548139A19D8FD14000A4AA8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		654813A519D9C892000A4AA8 /* AngleGradient */ = {
+			isa = PBXGroup;
+			children = (
+				654813A619D9C892000A4AA8 /* AngleGradientLayer.h */,
+				654813A719D9C892000A4AA8 /* AngleGradientLayer.m */,
+			);
+			name = AngleGradient;
+			path = ../../AngleGradientLayer/AngleGradient;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6548137F19D8FD14000A4AA8 /* AngleGradientBorderTutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6548139F19D8FD14000A4AA8 /* Build configuration list for PBXNativeTarget "AngleGradientBorderTutorial" */;
+			buildPhases = (
+				6548137C19D8FD14000A4AA8 /* Sources */,
+				6548137D19D8FD14000A4AA8 /* Frameworks */,
+				6548137E19D8FD14000A4AA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AngleGradientBorderTutorial;
+			productName = AngleGradientBorderTutorial;
+			productReference = 6548138019D8FD14000A4AA8 /* AngleGradientBorderTutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6548139419D8FD14000A4AA8 /* AngleGradientBorderTutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 654813A219D8FD14000A4AA8 /* Build configuration list for PBXNativeTarget "AngleGradientBorderTutorialTests" */;
+			buildPhases = (
+				6548139119D8FD14000A4AA8 /* Sources */,
+				6548139219D8FD14000A4AA8 /* Frameworks */,
+				6548139319D8FD14000A4AA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6548139719D8FD14000A4AA8 /* PBXTargetDependency */,
+			);
+			name = AngleGradientBorderTutorialTests;
+			productName = AngleGradientBorderTutorialTests;
+			productReference = 6548139519D8FD14000A4AA8 /* AngleGradientBorderTutorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6548137819D8FD14000A4AA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Ian Hirschfeld";
+				TargetAttributes = {
+					6548137F19D8FD14000A4AA8 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					6548139419D8FD14000A4AA8 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 6548137F19D8FD14000A4AA8;
+					};
+				};
+			};
+			buildConfigurationList = 6548137B19D8FD14000A4AA8 /* Build configuration list for PBXProject "AngleGradientBorderTutorial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6548137719D8FD14000A4AA8;
+			productRefGroup = 6548138119D8FD14000A4AA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6548137F19D8FD14000A4AA8 /* AngleGradientBorderTutorial */,
+				6548139419D8FD14000A4AA8 /* AngleGradientBorderTutorialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6548137E19D8FD14000A4AA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6548138B19D8FD14000A4AA8 /* Main.storyboard in Resources */,
+				6548139019D8FD14000A4AA8 /* LaunchScreen.xib in Resources */,
+				6548138D19D8FD14000A4AA8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6548139319D8FD14000A4AA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6548137C19D8FD14000A4AA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6548138819D8FD14000A4AA8 /* ViewController.swift in Sources */,
+				654813AB19D9CA34000A4AA8 /* AngleGradientBorderLayer.swift in Sources */,
+				654813A819D9C892000A4AA8 /* AngleGradientLayer.m in Sources */,
+				654813AD19D9CAA0000A4AA8 /* AngleGradientBorderView.swift in Sources */,
+				6548138619D8FD14000A4AA8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6548139119D8FD14000A4AA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6548139C19D8FD14000A4AA8 /* AngleGradientBorderTutorialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6548139719D8FD14000A4AA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6548137F19D8FD14000A4AA8 /* AngleGradientBorderTutorial */;
+			targetProxy = 6548139619D8FD14000A4AA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6548138919D8FD14000A4AA8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6548138A19D8FD14000A4AA8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6548138E19D8FD14000A4AA8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6548138F19D8FD14000A4AA8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6548139D19D8FD14000A4AA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6548139E19D8FD14000A4AA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		654813A019D8FD14000A4AA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AngleGradientBorderTutorial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AngleGradientBorderTutorial/AngleGradientBorderTutorial-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		654813A119D8FD14000A4AA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AngleGradientBorderTutorial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AngleGradientBorderTutorial/AngleGradientBorderTutorial-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		654813A319D8FD14000A4AA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AngleGradientBorderTutorialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AngleGradientBorderTutorial.app/AngleGradientBorderTutorial";
+			};
+			name = Debug;
+		};
+		654813A419D8FD14000A4AA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AngleGradientBorderTutorialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AngleGradientBorderTutorial.app/AngleGradientBorderTutorial";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6548137B19D8FD14000A4AA8 /* Build configuration list for PBXProject "AngleGradientBorderTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6548139D19D8FD14000A4AA8 /* Debug */,
+				6548139E19D8FD14000A4AA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6548139F19D8FD14000A4AA8 /* Build configuration list for PBXNativeTarget "AngleGradientBorderTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				654813A019D8FD14000A4AA8 /* Debug */,
+				654813A119D8FD14000A4AA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		654813A219D8FD14000A4AA8 /* Build configuration list for PBXNativeTarget "AngleGradientBorderTutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				654813A319D8FD14000A4AA8 /* Debug */,
+				654813A419D8FD14000A4AA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6548137819D8FD14000A4AA8 /* Project object */;
+}
