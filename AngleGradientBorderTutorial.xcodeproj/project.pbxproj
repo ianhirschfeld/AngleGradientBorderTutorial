@@ -13,9 +13,9 @@
 		6548138D19D8FD14000A4AA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6548138C19D8FD14000A4AA8 /* Images.xcassets */; };
 		6548139019D8FD14000A4AA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6548138E19D8FD14000A4AA8 /* LaunchScreen.xib */; };
 		6548139C19D8FD14000A4AA8 /* AngleGradientBorderTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6548139B19D8FD14000A4AA8 /* AngleGradientBorderTutorialTests.swift */; };
-		654813A819D9C892000A4AA8 /* AngleGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 654813A719D9C892000A4AA8 /* AngleGradientLayer.m */; };
 		654813AB19D9CA34000A4AA8 /* AngleGradientBorderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654813AA19D9CA34000A4AA8 /* AngleGradientBorderLayer.swift */; };
 		654813AD19D9CAA0000A4AA8 /* AngleGradientBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654813AC19D9CAA0000A4AA8 /* AngleGradientBorderView.swift */; };
+		654813D019DF0780000A4AA8 /* AngleGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 654813CF19DF0780000A4AA8 /* AngleGradientLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +39,11 @@
 		6548139519D8FD14000A4AA8 /* AngleGradientBorderTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AngleGradientBorderTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6548139A19D8FD14000A4AA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6548139B19D8FD14000A4AA8 /* AngleGradientBorderTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleGradientBorderTutorialTests.swift; sourceTree = "<group>"; };
-		654813A619D9C892000A4AA8 /* AngleGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AngleGradientLayer.h; sourceTree = "<group>"; };
-		654813A719D9C892000A4AA8 /* AngleGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AngleGradientLayer.m; sourceTree = "<group>"; };
 		654813A919D9C943000A4AA8 /* AngleGradientBorderTutorial-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AngleGradientBorderTutorial-Bridging-Header.h"; sourceTree = "<group>"; };
 		654813AA19D9CA34000A4AA8 /* AngleGradientBorderLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngleGradientBorderLayer.swift; sourceTree = "<group>"; };
 		654813AC19D9CAA0000A4AA8 /* AngleGradientBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngleGradientBorderView.swift; sourceTree = "<group>"; };
+		654813CE19DF0780000A4AA8 /* AngleGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AngleGradientLayer.h; path = AngleGradientLayer/AngleGradientLayer.h; sourceTree = "<group>"; };
+		654813CF19DF0780000A4AA8 /* AngleGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AngleGradientLayer.m; path = AngleGradientLayer/AngleGradientLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 		6548137719D8FD14000A4AA8 = {
 			isa = PBXGroup;
 			children = (
-				654813A519D9C892000A4AA8 /* AngleGradient */,
+				654813D219DF07C4000A4AA8 /* AngleGradientLayer */,
 				6548138219D8FD14000A4AA8 /* AngleGradientBorderTutorial */,
 				6548139819D8FD14000A4AA8 /* AngleGradientBorderTutorialTests */,
 				6548138119D8FD14000A4AA8 /* Products */,
@@ -86,11 +86,10 @@
 		6548138219D8FD14000A4AA8 /* AngleGradientBorderTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				654813D319DF083D000A4AA8 /* AngleGradientBorder */,
 				654813A919D9C943000A4AA8 /* AngleGradientBorderTutorial-Bridging-Header.h */,
 				6548138519D8FD14000A4AA8 /* AppDelegate.swift */,
 				6548138719D8FD14000A4AA8 /* ViewController.swift */,
-				654813AA19D9CA34000A4AA8 /* AngleGradientBorderLayer.swift */,
-				654813AC19D9CAA0000A4AA8 /* AngleGradientBorderView.swift */,
 				6548138919D8FD14000A4AA8 /* Main.storyboard */,
 				6548138C19D8FD14000A4AA8 /* Images.xcassets */,
 				6548138E19D8FD14000A4AA8 /* LaunchScreen.xib */,
@@ -124,14 +123,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		654813A519D9C892000A4AA8 /* AngleGradient */ = {
+		654813D219DF07C4000A4AA8 /* AngleGradientLayer */ = {
 			isa = PBXGroup;
 			children = (
-				654813A619D9C892000A4AA8 /* AngleGradientLayer.h */,
-				654813A719D9C892000A4AA8 /* AngleGradientLayer.m */,
+				654813CE19DF0780000A4AA8 /* AngleGradientLayer.h */,
+				654813CF19DF0780000A4AA8 /* AngleGradientLayer.m */,
 			);
-			name = AngleGradient;
-			path = ../../AngleGradientLayer/AngleGradient;
+			name = AngleGradientLayer;
+			sourceTree = "<group>";
+		};
+		654813D319DF083D000A4AA8 /* AngleGradientBorder */ = {
+			isa = PBXGroup;
+			children = (
+				654813AA19D9CA34000A4AA8 /* AngleGradientBorderLayer.swift */,
+				654813AC19D9CAA0000A4AA8 /* AngleGradientBorderView.swift */,
+			);
+			name = AngleGradientBorder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,9 +243,9 @@
 			files = (
 				6548138819D8FD14000A4AA8 /* ViewController.swift in Sources */,
 				654813AB19D9CA34000A4AA8 /* AngleGradientBorderLayer.swift in Sources */,
-				654813A819D9C892000A4AA8 /* AngleGradientLayer.m in Sources */,
 				654813AD19D9CAA0000A4AA8 /* AngleGradientBorderView.swift in Sources */,
 				6548138619D8FD14000A4AA8 /* AppDelegate.swift in Sources */,
+				654813D019DF0780000A4AA8 /* AngleGradientLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +439,7 @@
 				654813A119D8FD14000A4AA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		654813A219D8FD14000A4AA8 /* Build configuration list for PBXNativeTarget "AngleGradientBorderTutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +448,7 @@
 				654813A419D8FD14000A4AA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
