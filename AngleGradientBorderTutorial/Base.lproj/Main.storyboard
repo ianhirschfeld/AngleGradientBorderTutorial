@@ -24,13 +24,38 @@
                                     <constraint firstAttribute="height" constant="150" id="s9K-Mb-u7C"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TEg-uh-ToI" customClass="AngleGradientBorderView" customModule="AngleGradientBorderTutorial" customModuleProvider="target">
+                                <rect key="frame" x="250" y="75" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="dJJ-LE-qRf"/>
+                                    <constraint firstAttribute="width" constant="100" id="rX0-I3-u4T"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rD0-k7-aKI" customClass="AngleGradientBorderView" customModule="AngleGradientBorderTutorial" customModuleProvider="target">
+                                <rect key="frame" x="260" y="425" width="80" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="6cc-bN-uXR"/>
+                                    <constraint firstAttribute="height" constant="80" id="K6t-Sq-bWQ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="rD0-k7-aKI" firstAttribute="top" secondItem="Ntl-bV-P4K" secondAttribute="bottom" constant="50" id="3j0-5Q-zbh"/>
+                            <constraint firstItem="Ntl-bV-P4K" firstAttribute="top" secondItem="TEg-uh-ToI" secondAttribute="bottom" constant="50" id="E0P-Jg-Iyt"/>
+                            <constraint firstAttribute="centerX" secondItem="TEg-uh-ToI" secondAttribute="centerX" id="Mfy-kp-Hhg"/>
+                            <constraint firstAttribute="centerX" secondItem="rD0-k7-aKI" secondAttribute="centerX" id="ROk-h0-Ec9"/>
                             <constraint firstAttribute="centerX" secondItem="Ntl-bV-P4K" secondAttribute="centerX" id="iDY-Xp-wEi"/>
                             <constraint firstAttribute="centerY" secondItem="Ntl-bV-P4K" secondAttribute="centerY" id="ltq-Wm-d6G"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="angleGradientBorderView1" destination="TEg-uh-ToI" id="9rr-oS-xyY"/>
+                        <outlet property="angleGradientBorderView2" destination="Ntl-bV-P4K" id="SZF-Uv-Pup"/>
+                        <outlet property="angleGradientBorderView3" destination="rD0-k7-aKI" id="vX2-aa-dsj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
