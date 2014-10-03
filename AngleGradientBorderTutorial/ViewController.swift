@@ -41,7 +41,30 @@ class ViewController: UIViewController {
     angleGradientBorderView3.setupGradientLayer(borderColors: angleGradientBorderView3Colors, borderWidth: 10)
 
     // Add some animation
+    scaleDownView()
     rotateView()
+  }
+
+  func scaleDownView() {
+    let animation = CABasicAnimation(keyPath: "transform.scale")
+    animation.fromValue = 1
+    animation.toValue = 0.5
+    animation.duration = 2
+    animation.removedOnCompletion = true
+    animation.delegate = self
+    animation.setValue("shrink", forKey: "animationId")
+    angleGradientBorderView1.layer.addAnimation(animation, forKey: "shrink")
+  }
+
+  func scaleUpView() {
+    let animation = CABasicAnimation(keyPath: "transform.scale")
+    animation.fromValue = 0.5
+    animation.toValue = 1
+    animation.duration = 2
+    animation.removedOnCompletion = true
+    animation.delegate = self
+    animation.setValue("grow", forKey: "animationId")
+    angleGradientBorderView1.layer.addAnimation(animation, forKey: "grow")
   }
 
   func rotateView() {
@@ -51,11 +74,28 @@ class ViewController: UIViewController {
     animation.duration = 3
     animation.removedOnCompletion = true
     animation.delegate = self
+    animation.setValue("spin", forKey: "animationId")
     angleGradientBorderView3.layer.addAnimation(animation, forKey: "spin")
   }
 
   override func animationDidStop(anim: CAAnimation!, finished flag: Bool) {
-    rotateView()
+    if flag {
+      if let id: String = anim.valueForKey("animationId") as? String {
+        switch id {
+        case "shrink":
+          scaleUpView()
+
+        case "grow":
+          scaleDownView()
+
+        case "spin":
+          rotateView()
+
+        default:
+          break
+        }
+      }
+    }
   }
 
   override func didReceiveMemoryWarning() {
