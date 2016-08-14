@@ -25,7 +25,7 @@ class AngleGradientBorderView: UIView {
   }
 
   // Initializer
-  required init(coder aDecoder: NSCoder) {
+  required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     setupGradientLayer()
   }
@@ -39,7 +39,7 @@ class AngleGradientBorderView: UIView {
   // Setup the attributes of this view's layer
   func setupGradientLayer(borderColors gradientBorderColors: [AnyObject]? = nil, borderWidth gradientBorderWidth: CGFloat? = nil) {
     // Grab this UIView's layer and cast it as AngleGradientBorderLayer
-    let l: AngleGradientBorderLayer = self.layer as AngleGradientBorderLayer
+    let l: AngleGradientBorderLayer = self.layer as! AngleGradientBorderLayer
 
     // NOTE: Since our gradient layer is built as an image,
     // we need to scale it to match the display of the device.

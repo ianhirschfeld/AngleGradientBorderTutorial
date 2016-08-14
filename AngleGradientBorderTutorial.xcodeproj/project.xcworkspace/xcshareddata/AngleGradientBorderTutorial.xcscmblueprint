@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FFB13BC18BD8D1C63567453019BF4D81D77BEBCF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5E221C555955B9572C5ECAC1ADDCDFBAF5BA6293" : 0,
+    "FFB13BC18BD8D1C63567453019BF4D81D77BEBCF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B9977B4E-33FC-4F3C-9092-7B2DCF8A5494",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5E221C555955B9572C5ECAC1ADDCDFBAF5BA6293" : "AngleGradientLayer",
+    "FFB13BC18BD8D1C63567453019BF4D81D77BEBCF" : "AngleGradientBorderTutorial"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AngleGradientBorderTutorial",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AngleGradientBorderTutorial.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:ianhirschfeld\/AngleGradientLayer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5E221C555955B9572C5ECAC1ADDCDFBAF5BA6293"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:ianhirschfeld\/AngleGradientBorderTutorial.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FFB13BC18BD8D1C63567453019BF4D81D77BEBCF"
+    }
+  ]
+}

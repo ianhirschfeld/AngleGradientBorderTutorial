@@ -14,14 +14,14 @@ class AngleGradientBorderLayer: AngleGradientLayer {
   var gradientBorderWidth: CGFloat = 1
 
   // Override to add a border shape to AngleGradientLayer.
-  override func drawInContext(ctx: CGContext!) {
+  override func drawInContext(ctx: CGContext) {
     // Draw a shape that fills the view minus the width of your final border.
     // This can be any shape you want to make a border out of.
     // This example draws a circle.
     let shapePath = UIBezierPath(roundedRect: CGRectInset(bounds, gradientBorderWidth, gradientBorderWidth), cornerRadius: bounds.height / 2)
 
     // Copy the path of the shape and turn it into a stroke.
-    let shapeCopyPath = CGPathCreateCopyByStrokingPath(shapePath.CGPath, nil, gradientBorderWidth, kCGLineCapButt, kCGLineJoinBevel, 0)
+    let shapeCopyPath = CGPathCreateCopyByStrokingPath(shapePath.CGPath, nil, gradientBorderWidth, CGLineCap.Butt, CGLineJoin.Bevel, 0)
 
     CGContextSaveGState(ctx)
 

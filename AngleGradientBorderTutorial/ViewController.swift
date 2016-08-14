@@ -78,7 +78,7 @@ class ViewController: UIViewController {
     angleGradientBorderView3.layer.addAnimation(animation, forKey: "spin")
   }
 
-  override func animationDidStop(anim: CAAnimation!, finished flag: Bool) {
+  override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
     if flag {
       if let id: String = anim.valueForKey("animationId") as? String {
         switch id {
