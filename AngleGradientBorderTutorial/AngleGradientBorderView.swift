@@ -12,15 +12,15 @@ class AngleGradientBorderView: UIView {
 
   // Constants
   let DefaultGradientBorderColors: [AnyObject] = [
-    UIColor.redColor().CGColor,
-    UIColor.greenColor().CGColor,
-    UIColor.blueColor().CGColor,
-    UIColor.redColor().CGColor, // Repeat the first color to make a smooth transition
+    UIColor.red.cgColor,
+    UIColor.green.cgColor,
+    UIColor.blue.cgColor,
+    UIColor.red.cgColor, // Repeat the first color to make a smooth transition
   ]
   let DefaultGradientBorderWidth: CGFloat = 4
 
   // Set the UIView's layer class to be our AngleGradientBorderLayer
-  override class func layerClass() -> AnyClass {
+  override class var layerClass : AnyClass {
     return AngleGradientBorderLayer.self
   }
 
@@ -43,7 +43,7 @@ class AngleGradientBorderView: UIView {
 
     // NOTE: Since our gradient layer is built as an image,
     // we need to scale it to match the display of the device.
-    l.contentsScale = UIScreen.mainScreen().scale
+    l.contentsScale = UIScreen.main.scale
 
     // Set the gradient colors
     if gradientBorderColors != nil {

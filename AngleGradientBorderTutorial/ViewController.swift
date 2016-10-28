@@ -19,23 +19,23 @@ class ViewController: UIViewController {
     super.viewDidLoad()
 
     let angleGradientBorderView1Colors: [AnyObject] = [
-      UIColor.purpleColor().CGColor,
-      UIColor.yellowColor().CGColor,
-      UIColor.orangeColor().CGColor,
-      UIColor.purpleColor().CGColor,
+      UIColor.purple.cgColor,
+      UIColor.yellow.cgColor,
+      UIColor.orange.cgColor,
+      UIColor.purple.cgColor,
     ]
     // Change the colors of angleGradientBorderView1 and its border width
     angleGradientBorderView1.setupGradientLayer(borderColors: angleGradientBorderView1Colors, borderWidth: 5)
 
     let angleGradientBorderView3Colors: [AnyObject] = [
-      UIColor.redColor().CGColor,
-      UIColor.orangeColor().CGColor,
-      UIColor.yellowColor().CGColor,
-      UIColor.greenColor().CGColor,
-      UIColor.blueColor().CGColor,
-      UIColor.purpleColor().CGColor,
-      UIColor.magentaColor().CGColor,
-      UIColor.redColor().CGColor,
+      UIColor.red.cgColor,
+      UIColor.orange.cgColor,
+      UIColor.yellow.cgColor,
+      UIColor.green.cgColor,
+      UIColor.blue.cgColor,
+      UIColor.purple.cgColor,
+      UIColor.magenta.cgColor,
+      UIColor.red.cgColor,
     ]
     // Change the colors of angleGradientBorderView1 and its border width
     angleGradientBorderView3.setupGradientLayer(borderColors: angleGradientBorderView3Colors, borderWidth: 10)
@@ -50,10 +50,11 @@ class ViewController: UIViewController {
     animation.fromValue = 1
     animation.toValue = 0.5
     animation.duration = 2
-    animation.removedOnCompletion = true
+    animation.isRemovedOnCompletion = true
     animation.delegate = self
     animation.setValue("shrink", forKey: "animationId")
-    angleGradientBorderView1.layer.addAnimation(animation, forKey: "shrink")
+    angleGradientBorderView1.layer.add(animation, forKey: "shrink")
+    angleGradientBorderView1.layer.transform = CATransform3DScale(CATransform3DIdentity, 0.5, 0.5, 1)
   }
 
   func scaleUpView() {
@@ -61,10 +62,11 @@ class ViewController: UIViewController {
     animation.fromValue = 0.5
     animation.toValue = 1
     animation.duration = 2
-    animation.removedOnCompletion = true
+    animation.isRemovedOnCompletion = true
     animation.delegate = self
     animation.setValue("grow", forKey: "animationId")
-    angleGradientBorderView1.layer.addAnimation(animation, forKey: "grow")
+    angleGradientBorderView1.layer.add(animation, forKey: "grow")
+    angleGradientBorderView1.layer.transform = CATransform3DIdentity
   }
 
   func rotateView() {
@@ -72,15 +74,19 @@ class ViewController: UIViewController {
     animation.fromValue = 0
     animation.toValue = 2 * M_PI
     animation.duration = 3
-    animation.removedOnCompletion = true
+    animation.isRemovedOnCompletion = true
     animation.delegate = self
     animation.setValue("spin", forKey: "animationId")
-    angleGradientBorderView3.layer.addAnimation(animation, forKey: "spin")
+    angleGradientBorderView3.layer.add(animation, forKey: "spin")
   }
 
-  override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
+}
+
+extension ViewController: CAAnimationDelegate {
+
+  func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
     if flag {
-      if let id: String = anim.valueForKey("animationId") as? String {
+      if let id: String = anim.value(forKey: "animationId") as? String {
         switch id {
         case "shrink":
           scaleUpView()
@@ -98,10 +104,4 @@ class ViewController: UIViewController {
     }
   }
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
 }
-

@@ -14,25 +14,25 @@ class AngleGradientBorderLayer: AngleGradientLayer {
   var gradientBorderWidth: CGFloat = 1
 
   // Override to add a border shape to AngleGradientLayer.
-  override func drawInContext(ctx: CGContext) {
+  override func draw(in ctx: CGContext) {
     // Draw a shape that fills the view minus the width of your final border.
     // This can be any shape you want to make a border out of.
     // This example draws a circle.
-    let shapePath = UIBezierPath(roundedRect: CGRectInset(bounds, gradientBorderWidth, gradientBorderWidth), cornerRadius: bounds.height / 2)
+    let shapePath = UIBezierPath(roundedRect: bounds.insetBy(dx: gradientBorderWidth, dy: gradientBorderWidth), cornerRadius: bounds.height / 2)
 
     // Copy the path of the shape and turn it into a stroke.
-    let shapeCopyPath = CGPathCreateCopyByStrokingPath(shapePath.CGPath, nil, gradientBorderWidth, CGLineCap.Butt, CGLineJoin.Bevel, 0)
+    let shapeCopyPath = CGPath(__byStroking: shapePath.cgPath, transform: nil, lineWidth: gradientBorderWidth, lineCap: CGLineCap.butt, lineJoin: CGLineJoin.bevel, miterLimit: 0)
 
-    CGContextSaveGState(ctx)
+    ctx.saveGState()
 
     // Add the stroked path to the context and clip to it.
-    CGContextAddPath(ctx, shapeCopyPath)
-    CGContextClip(ctx)
+    ctx.addPath(shapeCopyPath!)
+    ctx.clip()
 
     // Call our super class's (AngleGradientLayer) #drawInContext
     // which will do the work to create the gradient.
-    super.drawInContext(ctx)
+    super.draw(in: ctx)
 
-    CGContextRestoreGState(ctx)
+    ctx.restoreGState()
   }
 }
